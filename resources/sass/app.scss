@@ -1,1 +1,37 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.form-btn {
+    float: left;
+    margin: 10px;
+}
+
+.review-card {
+    margin-top: 10px;
+}
+
+#page-header {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+#vacation-carousel > img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('/images/beach.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
