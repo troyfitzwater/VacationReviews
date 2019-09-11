@@ -29,6 +29,6 @@ class VacationController extends Controller
 
     public function create()
     {
-        return view('vacations.create');
+        return view('vacations.reviews.create');
     }
 }

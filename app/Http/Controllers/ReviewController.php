@@ -15,7 +15,7 @@ class ReviewController extends Controller
         $vacation = Vacation::findOrFail($id);
         $user = Auth::user();
 
-        return view('/vacations.createReview', ['vacation' => $vacation, 'user' => $user]);
+        return view('/vacations.reviews.create', ['vacation' => $vacation, 'user' => $user]);
     }
 
     public function store(Request $request)

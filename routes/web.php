@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'VacationController@index');
 
 Route::get('/vacations', 'VacationController@index');
 Route::get('/vacations/{vacation}', 'VacationController@show')->name('show_vacation');
-Route::get('/vacations/{vacation}/createReview', 'ReviewController@create')->middleware('auth');
+Route::get('/vacations/{vacation}/reviews/create', 'ReviewController@create')->middleware('auth');
 Route::post('/vacations/{vacation}', 'ReviewController@store');
 Route::delete('vacations/reviews/{review}', 'ReviewController@destroy');
 Route::get('/vacations/reviews/{review}/edit', 'ReviewController@edit');
