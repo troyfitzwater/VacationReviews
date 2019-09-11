@@ -3,7 +3,16 @@
 @section('content')
 <br>
 <div class="container">
-    <h1 class="h-100 p-4 display-4 text-center">Vacation Spots</h1>
+
+    <div class="h-100 p-4 jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Vacation Station</h1>
+            <p class="lead">Where to next?</p>
+            <form action="/login" method="get">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+        </div>
+    </div>
     <br>
     <?php
         $maxColumns = 3;
@@ -14,6 +23,7 @@
         @foreach ($vacations as $vacation)
             <div class="col-md-<?php echo $columnWidth; ?>">
                 <div class="card mb-3">
+                    <img class="card-img-top" src="{{ asset('/images/vacations/'.$vacation->name.'/thumbnail.jpg') }}">
                     <div class="card-body">
                         <h3 class="card-title">{{ $vacation->name }}</h5>
                         <p class="card-text">{{ $vacation->location }}</p>

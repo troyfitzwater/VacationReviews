@@ -17,6 +17,7 @@
 
     <br><br>
 
+    <a href="/vacations"><p>< Back to all vacations</p></a>
     <div class="row" id="vacation-intro">
         <div class="card">
             <div class="card-body mb-3">
@@ -100,8 +101,10 @@
                     </div>
                 @endif
 
-            </section>    
-        </div>  
+            </section>
+        </div> 
     </div>
+    <br>
+    <a href="/vacations"><p>< Back to all vacations</p></a>
 </div>
 @endsection
